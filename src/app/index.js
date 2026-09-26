@@ -24,11 +24,11 @@ export default function Inicio() {
       </View>
 
       <View style={styles.cartao}>
-        <Text style={styles.cartaoTitulo}>Prova</Text>
-        <Text style={styles.detalhe}>Prova da aula passada...</Text>
+        <Text style={styles.cartaoTitulo}>Contador</Text>
+        <Text style={styles.detalhe}>Hooks aula 18/09...</Text>
         {/* href é o caminho do arquivo: notas.js vira "/notas" */}
-        <Link href="/prova" style={styles.link}>
-          Abrir prova →
+        <Link href="/contador" style={styles.link}>
+          Abrir contador →
         </Link>
       </View>
 
@@ -49,6 +49,27 @@ export default function Inicio() {
           Abrir →
         </Link>
       </View>
+
+      <View style={styles.cartao}>
+        <Text style={styles.cartaoTitulo}>lista de musicas.</Text>
+        <Text style={styles.detalhe}>
+          Abrir lista
+        </Text>
+        <Link href="/listademusicas" style={styles.link}>
+          Abrir →
+        </Link>
+      </View>
+
+      <View style={styles.cartao}>
+        <Text style={styles.cartaoTitulo}>Bordel</Text>
+        <Text style={styles.detalhe}>
+          Abrir lista bordel
+        </Text>
+        <Link href="/bordel" style={styles.link}>
+          Abrir →
+        </Link>
+      </View>
+
     </SafeAreaView>
   );
 }
@@ -83,7 +104,7 @@ const styles = StyleSheet.create({
 
   subtitulo: {
     fontSize: 14,
-    color: "#6B7280",
+    color: "silver",
     marginTop: 2,
   },
 
